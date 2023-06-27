@@ -3,8 +3,8 @@ import React from "react";
 function PlayerScore({ player, score }) {
     return (
       <tr>
-        <td>{player}</td>
-        <td>{score}</td>
+        <td className="text-end">{player}</td>
+        <td className="text-end">{score}</td>
       </tr>
     );
   }

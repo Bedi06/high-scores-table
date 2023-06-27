@@ -10,7 +10,7 @@ function HighScoresTable({ country }) {
   }
 
   return (
-   <div className="d-flexjustify-content-center"> 
+   <div className="d-flex justify-content-center"> 
         <div className="my-4">
             <h2 className="mb-3 text-center">High Scores : {country} </h2>
                 <table className="table"> 
