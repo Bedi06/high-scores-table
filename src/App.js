@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
+import HighScoresTable from './HighScoresTable';
+import allCountryScores from './scores';
 
-function HighScoresTable() {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">      ¡  
-      </header>
+    <div className="d-flex justify-content-center align-items-center flex-column">
+      <h1 className="mb-4">High Scores per Country </h1>
+      {allCountryScores.map((country, index) => (
+        <HighScoresTable key={index} country={country.name} />
+      ))}
     </div>
   );
 }
 
-export default HighScoresTable;
+export default App;
