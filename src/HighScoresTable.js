@@ -8,7 +8,6 @@ function HighScoresTable({ country }) {
   if (!scores) {
     return null;
   }
-
   return (
    <div className="d-flex justify-content-center"> 
         <div className="my-4">
